@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script >
+    console.log("Hello World");
+    // let tempFahrenheit = 75;
+    // let tempCelsius = (tempFahrenheit -32) * 5/9;
+    // console.log(tempCelsius);
+    // let tempKelvin = tempCelsius + 273.15;
+    // console.log(tempKelvin);
+    // let todaysForcast = `The current temperature outside is ${tempFahrenheit} degrees Fahrenheit, ${tempCelsius} degrees Celcius, and ${tempKelvin} degrees Kelvin.`;
+    // console.log(todaysForcast);
+    function todaysForcast(tempFahrenheit){
+        const tempCelsius = (tempFahrenheit -32) * 5/9;
+        const tempKelvin = tempCelsius + 273.15;
+        return `The current temperature outside is ${tempFahrenheit} degrees Fahrenheit, ${tempCelsius} degrees Celcius, and ${tempKelvin} degrees Kelvin.`;
+    }
+    console.log(todaysForcast(75));
+
+    //Personal Greeting
+
+    const firstName = "Megan";
+    const lastName = "Murphy-Marxen";
+    let age = 33;
+    let city = "Lakewood Ranch, FL";
+
+    const greeting = `Hello! My name is ${firstName} ${lastName}! I'm ${age} years old, and I'm from ${city}. It's nice to meet you!`;
+    console.log(greeting);
+    const initials = firstName[0] + lastName[0];
+    console.log(initials); 
+    const nameLength= firstName.length;
+    console.log(nameLength);
+
+    const upperCase = firstName.toUpperCase()
+    console.log(upperCase);
+    const lowerCase = firstName.toLowerCase();
+    console.log(lowerCase);
+    function sayGreeting(firstName,lastName,age,city){
+        return  `Hello! My name is ${firstName} ${lastName}! I'm ${age} years old, and I'm from ${city}. It's nice to meet you!`
+    }
+    console.log(sayGreeting("Megan","Murphy-Marxen",33,"Lakewood Ranch, FL"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
