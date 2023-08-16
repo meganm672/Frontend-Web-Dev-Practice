@@ -78,3 +78,4 @@ newPerson.favoriteFood = "chocolate cake"
 // Log both objects to the console.
 console.log(person);
 console.log(newPerson);
+
