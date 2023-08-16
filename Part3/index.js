@@ -43,26 +43,38 @@ const colorsCopy = console.log(...colors);
 
 // First, create an object called "person" with the following properties:
 //  "name" (a string), "age" (a number), and "favoriteColors" (an array of strings).
-
+const person = {
+    name : "John",
+    age : 27,
+    favoriteColors : ["red", "blue", "green"],
+}
 //console.log it
-
+console.log(person);
 // Access the "name" property of the object and store it in a variable called "name".
-
+const name = person.name;
 // Access the "age" property of the object and store it in a variable called "age".
-
+const age = person.age;
 // Access the "favoriteColors" property of the object 
 // and store it in a variable called "favoriteColors".
-
+const favoriteColors = person.favoriteColors;
 // Print the name, age, and favoriteColors variables to the console.
-
+console.log(name);
+console.log(age);
+console.log(favoriteColors);
 // Add a new property to the person object called favoriteFood and assign it “pizza.”
-
+person["favoriteFood"] = "pizza";
+console.log(person);
 // Use the delete operator to remove “favoriteColors” from the person object.
-
+delete person["favoriteColors"];
+console.log(person);
 // Create a newPerson variable. 
 // Using the spread operator (...) make a copy of “person” and assign the value to newPerson.
-
+const newPerson = {...person};
+ console.log(newPerson);
 // Change the name and age properties on newPerson to something different.
-
+newPerson.name = "Patty";
+newPerson.age = 64;
+newPerson.favoriteFood = "chocolate cake"
 // Log both objects to the console.
-
+console.log(person);
+console.log(newPerson);
