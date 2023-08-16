@@ -59,7 +59,7 @@ function jacket(currentTemp,isRaining){
     }
 }
 
-console.log(jacket(60,true));
+const jacketOrNoJacket = console.log(jacket(60,true));
 
 
 //The Calculator
